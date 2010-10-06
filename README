@@ -14,3 +14,7 @@ define('NAME', 'Your Firstname Lastname');
 ?>
 
 see the included scraper.sql file for the db schema
+
+You will also want to create an email to send out if you want to use the automated emailing feature. Just write up a nice template and save it as craigslist_email.html and the system will read the contents and send it to any of the listings you've selected. 
+
+NOTE!! Craigslist is very very strict about emails. Unless you have a proper reverse DNS record for your server, they will not accept these emails. You need to either set up a proper reverse DNS record for the server you are using, or just send the emails one at a time the old fashioned way. 
