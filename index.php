@@ -135,11 +135,11 @@ class craigslist {
         $handle = fopen($filename, "r");
         $contents = fread($handle, filesize($filename));
         fclose($handle);
-        $contents .= $this->render_file($_SERVER['SCRIPT_FILENAME']);
+
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";        
-        $headers .= 'From: Daniel Sheppard <gutbunny@gmail.com>' . "\r\n" .
-                'Reply-To: gutbunny@gmail.com' . "\r\n" .
+        $headers .= 'From: '. NAME .' <'. EMAIL .'>' . "\r\n" .
+                'Reply-To: ' . EMAIL . " \r\n" .
                 'X-Mailer: PHP/' . phpversion() . "\r\n";
 
         if(mail($email, $subject, $contents, $headers)) $success = true;

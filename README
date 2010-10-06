@@ -1,0 +1,16 @@
+This system is far from being plug-and-play but it does work once it is set up
+
+You will need to create a file called 'shep_config.php' with the following contents:
+
+<?
+
+define('DB_HOST', 'your_mysql_host');
+define('DB_USER' , 'your_user');
+define('DB_PWD', 'your-password');
+define('DB_DATABASE', 'scraper'); //just a suggestion for the name
+define('EMAIL', 'your email address');
+define('NAME', 'Your Firstname Lastname');
+
+?>
+
+see the included scraper.sql file for the db schema
