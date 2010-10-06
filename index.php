@@ -131,7 +131,7 @@ class craigslist {
     function send_email($email, $subject, $clid) {
         
         //$email      = 'dlsheppard2003@yahoo.com';
-        $filename = "includes/craigslist_email.php";
+        $filename = "craigslist_email.html";
         $handle = fopen($filename, "r");
         $contents = fread($handle, filesize($filename));
         fclose($handle);
